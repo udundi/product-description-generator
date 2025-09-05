@@ -1,0 +1,40 @@
+{
+  "name": "product-description-generator",
+  "version": "1.0.0",
+  "description": "A Node.js application that generates product descriptions using GPT-5 Nano based on brand phrases, product tags, and images.",
+  "main": "src/app.js",
+  "scripts": {
+    "generate": "node src/processCsv.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.2.2",
+    "express": "^4.21.2",
+    "fast-csv": "^5.0.5",
+    "multer": "^1.4.4",
+    "openai": "^5.19.1",
+    "p-limit": "^7.1.1",
+    "p-retry": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "author": "Chase Brackett",
+  "license": "MIT",
+  "keywords": [],
+  "type": "module",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug processCsv.js (ESM)",
+      "program": "${workspaceFolder}/src/processCsv.js",
+      "runtimeArgs": [
+        "--loader",
+        "node --experimental-specifier-resolution=node"
+      ],
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
