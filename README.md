@@ -1,6 +1,6 @@
 # Product Description Generator
 
-This project is a Node.js application that generates product descriptions using the GPT-5 Nano model. It takes input from brand phrases, product tags, and images to create compelling descriptions for various products.
+This project is a Node.js application that generates product descriptions using the GPT-4o Mini model. It takes input from brand phrases, product tags, and images to create compelling descriptions for various products.
 
 ## Table of Contents
 
